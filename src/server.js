@@ -1,7 +1,7 @@
-const { response } = require('express')
 const express = require('express')
+const ejs = require('ejs')
+const path = require('path')
 const app = express()
-
 
 const passangers = [
     {
@@ -21,8 +21,12 @@ const passangers = [
     },
 ];
 
-
 app.get('/', (request, response) => {
+
+    ejs.renderFile(
+        path.join(__dirname, "/print.ejs")
+    )
+
     return response.send(passangers)
 })
 
