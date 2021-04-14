@@ -1,7 +1,4 @@
 # GERAR PDF 
- 
-## Demonstration
-<img src="./demo.png" alt="exemplo"> 
 
 ## Techs 
 * [ ] HTML
